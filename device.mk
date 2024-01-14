@@ -23,6 +23,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Dex
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    MiuiCamera
+
 # Sysconfig
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/miuicamera-hiddenapi-package-allowlist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/miuicamera-hiddenapi-package-allowlist.xml
